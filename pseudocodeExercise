@@ -1,0 +1,46 @@
+EXCERCISE 1
+#Allow the user to input digits, afterwards sort and print them in numerical order.#
+
+#input: numbers (how many? range and negative numbers)
+#output: list of numbers in ascending order
+
+#constraints: #set of numbers 
+#Example: Input: 3, 5, 2000399393939, 2, -39
+          Output: 3, 5
+              
+#steps: 
+    #make a list
+    #get input
+    #check input
+        #If it is not a number 
+                    return error.
+        #If it is a number 
+                    add to the list
+    #sort   
+        #add first num to the list
+        #get the second num
+        #check the second num:
+            #If num2>num1 add num2 after num1
+            #If num1>num2 add num1 after num2
+        #check and add numbers into the list
+            #Get numX
+            #Check numX
+                #If numX>numPrevious add numX after numPrevious
+                #If numPrevious>numX add numPrevious after numX
+        #print the list
+
+BEGIN/SortNumbersInOrder
+CREATE an empty list
+DISPLAY NumByUser as "please add numbers"
+GET num1
+ADD num1 to the list "SortedNumbers"
+GET num2
+    IF num2 > num1 add num2 after num1 in the list
+    IF num1 > num2 add num2 before num1 in the list
+REPEAT
+    IF numX > numPreviousX add numX after numPreviousX in the list
+    IF numPreviousX > numX add numX before numPreviousX in the list
+PRINT the list
+END/SortNumbersInOrder
+
+
